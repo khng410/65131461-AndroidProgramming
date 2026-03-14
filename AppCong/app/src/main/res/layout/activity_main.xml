@@ -58,6 +58,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="160dp"
+        android:onClick="XuLyCong"
         android:text="Tính Tổng"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
