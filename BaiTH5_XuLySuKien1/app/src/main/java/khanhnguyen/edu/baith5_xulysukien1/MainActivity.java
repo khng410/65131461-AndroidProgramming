@@ -1,4 +1,4 @@
-package khanhnguyen.edu.linearlayout_tong2so;
+package khanhnguyen.edu.baith5_xulysukien1;
 
 import android.os.Bundle;
 import android.view.View;
