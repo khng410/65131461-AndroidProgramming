@@ -1,4 +1,4 @@
-package khanhnguyen.edu.appcong;
+package khanhnguyen.edu.baith6_xulysukien_tinhtong;
 
 import android.os.Bundle;
 import android.view.View;
