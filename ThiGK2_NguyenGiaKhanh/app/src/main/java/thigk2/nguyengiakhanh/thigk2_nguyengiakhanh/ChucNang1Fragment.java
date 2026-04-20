@@ -30,7 +30,7 @@ public class ChucNang1Fragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private TextInputEditText bmiHeight, bmiWeight;
-    private Button bmiBtn;
+    private Button bmiBtn,bmiBtn2;
     private TextView bmiRes;
 
     public ChucNang1Fragment() {
@@ -76,14 +76,25 @@ public class ChucNang1Fragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         bmiHeight = view.findViewById(R.id.bmi_height);
         bmiWeight = view.findViewById(R.id.bmi_weight);
-        bmiBtn = view.findViewById(R.id.bmi_btn);
-        bmiRes = view.findViewById(R.id.bmi_res);
+        bmiBtn = view.findViewById(R.id.bmi_btn_cv);
+        bmiBtn2 = view.findViewById(R.id.bmi_btn_dt);
+        bmiRes = view.findViewById(R.id.bmi_res_cv);
 
         bmiBtn.setOnClickListener(v -> {
             try {
                 double height = Double.parseDouble(bmiHeight.getEditableText().toString());
                 double weight = Double.parseDouble(bmiWeight.getEditableText().toString());
-                double res = weight / (height * height);
+                double res = (weight + height)*2;
+                bmiRes.setText(String.valueOf(res));
+            } catch (Exception e) {
+                Toast.makeText(getContext(), "Lo", Toast.LENGTH_SHORT).show();
+            }
+        });
+        bmiBtn2.setOnClickListener(v -> {
+            try {
+                double height = Double.parseDouble(bmiHeight.getEditableText().toString());
+                double weight = Double.parseDouble(bmiWeight.getEditableText().toString());
+                double res = weight * height;
                 bmiRes.setText(String.valueOf(res));
             } catch (Exception e) {
                 Toast.makeText(getContext(), "Lo", Toast.LENGTH_SHORT).show();
