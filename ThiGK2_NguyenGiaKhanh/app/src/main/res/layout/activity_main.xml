@@ -35,21 +35,21 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="1dp"
-            android:text="BMI"/>
+            android:text="Chuc nang 1"/>
         <Button
             android:id="@+id/main_btn2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="1dp"
-            android:text="Món ăn"/>
+            android:text="Chuc nang 2"/>
         <Button
             android:id="@+id/main_btn3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:padding="1dp"
-            android:text="Bài thuốc"/>
+            android:text="Chuc nang 3"/>
         <Button
             android:id="@+id/main_btn4"
             android:layout_width="match_parent"

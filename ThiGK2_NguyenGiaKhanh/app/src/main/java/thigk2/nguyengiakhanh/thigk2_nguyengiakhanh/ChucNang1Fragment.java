@@ -101,4 +101,4 @@ public class ChucNang1Fragment extends Fragment {
             }
         });
     }
-}}
+}
