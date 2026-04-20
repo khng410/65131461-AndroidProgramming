@@ -2,15 +2,21 @@ package thigk2.nguyengiakhanh.thigk2_nguyengiakhanh;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ChucNang1Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class ChucNang1Fragment extends Fragment {
@@ -23,6 +29,9 @@ public class ChucNang1Fragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private TextInputEditText bmiHeight, bmiWeight;
+    private Button bmiBtn;
+    private TextView bmiRes;
 
     public ChucNang1Fragment() {
         // Required empty public constructor
@@ -61,4 +70,24 @@ public class ChucNang1Fragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_chuc_nang1, container, false);
     }
-}
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        bmiHeight = view.findViewById(R.id.bmi_height);
+        bmiWeight = view.findViewById(R.id.bmi_weight);
+        bmiBtn = view.findViewById(R.id.bmi_btn);
+        bmiRes = view.findViewById(R.id.bmi_res);
+
+        bmiBtn.setOnClickListener(v -> {
+            try {
+                double height = Double.parseDouble(bmiHeight.getEditableText().toString());
+                double weight = Double.parseDouble(bmiWeight.getEditableText().toString());
+                double res = weight / (height * height);
+                bmiRes.setText(String.valueOf(res));
+            } catch (Exception e) {
+                Toast.makeText(getContext(), "Lo", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}}
