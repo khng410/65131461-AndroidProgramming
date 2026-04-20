@@ -1,12 +1,15 @@
 package thigk2.nguyengiakhanh.thigk2_nguyengiakhanh;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentManager;
 
 
 public class MainActivity2 extends AppCompatActivity {
@@ -23,14 +26,14 @@ public class MainActivity2 extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         if (signal.equals("bmi")){
             fragmentManager.beginTransaction()
-                    .replace(R.id.second_content_container, new BMIFragment())
+                    .replace(R.id.second_content_container, new ChucNang1Fragment())
                     .commit();
-            secondLogoText.setText("Tính chỉ số cơ thể");
+            secondLogoText.setText("Tính Chu vi và Diện tích HCN");
         } else if (signal.equals("food")) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.second_content_container, new FoodFragment())
+                    .replace(R.id.second_content_container, new ChucNang3Fragment())
                     .commit();
-            secondLogoText.setText("Danh mục món ăn");
+            secondLogoText.setText("Danh mục điểm du lich Nha Trang");
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
