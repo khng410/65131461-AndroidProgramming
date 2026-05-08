@@ -45,11 +45,6 @@ public class ThemTaskActivity extends AppCompatActivity {
                 DatabaseReference reference = database.getReference("TASKS");
 
                 String key = reference.push().getKey();
-//                if (key != null) {
-//                    reference.child(key).setValue(task);
-//                    Toast.makeText(ThemTaskActivity.this, "Đã thêm công việc thành công", Toast.LENGTH_SHORT).show();
-//                    finish();
-//                }
                 HashMap<String, Object> item = new HashMap<String, Object>();
                 item.put(key, task.toFirebaseObject());
                 reference.updateChildren(item, new DatabaseReference.CompletionListener() {
