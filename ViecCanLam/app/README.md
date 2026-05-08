@@ -20,6 +20,3 @@ Dưới đây là các bước thực hiện trong ứng dụng:
 
 ### 5. Kết nối thành công với Database
 ![Firebase DB](src/main/res/drawable/ketNoiThanhCongDB_5.jpg)
-
----
-*Lưu ý: Các hình ảnh này được lưu trong thư mục `app/src/main/res/drawable/`.*
