@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159454161074",
+    "project_id": "thongtinsinhviendongian",
+    "storage_bucket": "thongtinsinhviendongian.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159454161074:android:8780bcf0504cc14f8981ab",
+        "android_client_info": {
+          "package_name": "bonus.edu.nguyengiakhanh.thongtinsinhvien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAokEAVxuwa4cLlCdQDTEdf7HsF5YYMHwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
