@@ -20,6 +20,3 @@ Dưới đây là các bước sử dụng ứng dụng:
 
 ### 5. Dữ liệu đã được lưu trên Firebase Database
 ![Firebase](app/src/main/res/drawable/ketNoiThanhCongDB_5.jpg)
-
----
-*Lưu ý: Để hình ảnh hiển thị đúng trên GitHub, hãy đảm bảo các file ảnh .jpg đã được push lên đúng thư mục `app/src/main/res/drawable/`.*
