@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981419019592",
+    "project_id": "dangky-dangnhap",
+    "storage_bucket": "dangky-dangnhap.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981419019592:android:c5bdb7ff4813c2d9fdf77d",
+        "android_client_info": {
+          "package_name": "bonus.edu.nguyengiakhanh.dangkydangnhapfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH2JzXWdIDlRMJhEwbA8uzI5iRSAOZmtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
